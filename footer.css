@@ -1,0 +1,13 @@
+.footer {
+  padding-top: var(--min-padding);
+  padding-bottom: var(--min-padding);
+  /* position: absolute; */
+  bottom: 0;
+  margin-top: 10em;
+}
+
+.footer > p {
+  margin: 0px;
+  text-align: center;
+  color: var(--accent);
+}

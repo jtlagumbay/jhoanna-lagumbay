@@ -37,8 +37,8 @@ p {
 }
 
 body{
-  /* background-color: var(--light-primary); */
-background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  margin: 0;
 }
 
 .flex-row {
@@ -55,8 +55,11 @@ background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
   padding: var(--min-padding);
 }
 
-.vertical-spacer {
+.vertical-spacer-8 {
   height: 8px;
+}
+.vertical-spacer-24 {
+  height: 24px;
 }
 
 .horizontal-spacer-8 {
@@ -65,7 +68,6 @@ background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 .horizontal-spacer-24 {
   width: 24px;
 }
-
 button {
   font-family: var(--dm-serif-display);
   font-optical-sizing: auto;
