@@ -10,11 +10,20 @@
 </head>
 <body>
   <div class="container">
-    <div id="ABOUT"></div>
+    <div id="ABOUT" ></div>
+    <div id="PROJECT"></div>
+    <div class="vertical-spacer-24"></div>
+    <div class="vertical-spacer-24"></div>
+    <div class="vertical-spacer-24"></div>
   </div>
 </body>
 <script src="functions.js"></script>
 <script>
   loadHTML("about.html", "ABOUT")
+  loadHTML("project.html", "PROJECT")
+  // loadHTML("project.html", "PROJECT", populateProjects)
+  window.onload = function () {
+    setInterval(changeThumbnail, 5000);
+  };
 </script>
 </html>

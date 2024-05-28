@@ -1,16 +1,22 @@
 
-.about-profile {
-  height: fit-content;
+.about-container{
+  height: 100dvh;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
+/* .about-profile {
+  height: fit-content;
+} */
 
 .about-profile{
-  height: 80dvh;
+  height: 70%;
   width: auto;
   min-height: 50dvh;
   max-width: 100%;
   object-fit: cover;
   border-radius: 20px;
   box-shadow: var(--box-shadow);
+  border: 2px solid var(--dark-primary);
 }
 
 /* Less than 600 */

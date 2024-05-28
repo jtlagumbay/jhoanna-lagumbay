@@ -1,0 +1,31 @@
+.project-container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  /* height: 100dvh; */
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);  
+  background-color: rgb(255, 255, 255, 0.4);
+  }
+
+.project-thumbnail {
+  height: 80dvh;
+  width: 50dvh;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
+  border: 2px solid var(--dark-primary);
+}
+
+.project-card-container{
+  width: fit-content;
+}
+
+.project-title{
+  font-size: 4rem;
+}
+
+.label{
+  font-weight: 600;
+}

@@ -12,7 +12,7 @@
   --dm-sans: "DM Sans", sans-serif;
 
   --min-padding: 10px;
-  --max-padding: 50px;
+  --max-padding: 80px;
 
   --box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
@@ -23,8 +23,25 @@ h1 {
   font-weight: 800;
   font-style: normal;
   color: var(--primary-text);
-  size: 3rem;
-  margin-bottom: 0px;
+  font-size: 3rem;
+}
+h2 {
+  font-family: var(--dm-sans);
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--primary-text);
+  font-size: 1.7rem;
+
+}
+h3 {
+  font-family: var(--dm-sans);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--primary-text);
+  font-size: 1.2rem;
+
 }
 
 p {
@@ -33,11 +50,12 @@ p {
   font-weight: 400;
   font-style: normal;
   color: var(--primary-text);
-  size: 1rem;
+  font-size: 1rem;
 }
 
 body{
-  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
   margin: 0;
 }
 
@@ -51,8 +69,17 @@ body{
   flex-direction: column;
 }
 
+.justify-content-center{
+  justify-content: center;
+}
+
+.align-items-center{
+  align-items: center;
+}
+
 .container {
-  padding: var(--min-padding);
+  padding-left: var(--min-padding);
+  padding-right: var(--min-padding);
 }
 
 .vertical-spacer-8 {
@@ -60,6 +87,11 @@ body{
 }
 .vertical-spacer-24 {
   height: 24px;
+}
+
+.section-padding{
+  padding-top:2em;
+  padding-bottom: 2em;
 }
 
 .horizontal-spacer-8 {
@@ -74,7 +106,8 @@ button {
   font-weight: 700;
   font-style: normal;
   color: var(--primary-text);
-  size: 1.2rem;
+  background-color: var(--white);
+  font-size: 1rem;
   padding: 0.5rem 2rem;
   border: 2px solid var(--dark-primary);
   border-radius: 20px;
@@ -103,7 +136,8 @@ button:focus{
 /* Greater than 600 */
 @media screen and (min-width: 600px) {
   .container {
-    padding: calc(var(--min-padding) + ((var(--max-padding) - var(--min-padding)) * ((100vw - 600px) / (1000 - 600))));
+    padding-left: calc(var(--min-padding) + ((var(--max-padding) - var(--min-padding)) * ((100vw - 600px) / (1000 - 600))));
+    padding-right: calc(var(--min-padding) + ((var(--max-padding) - var(--min-padding)) * ((100vw - 600px) / (1000 - 600))));
   }
   
 }
@@ -111,6 +145,7 @@ button:focus{
 /* Greater than 1000 */
 @media screen and (min-width: 1000px) {
   .container {
-    padding: var(--max-padding);
+    padding-left: var(--max-padding);
+    padding-right: var(--max-padding);
   }
 }

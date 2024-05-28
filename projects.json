@@ -2,7 +2,8 @@
   "projects":[
     {
       "title":"Guia",
-      "link":"",
+      "image":"./images/guia.png",
+      "link":"https://guia.kbytes.live/search-museum",
       "subtitle":"Museum Guide App with Image Recognition",
       "tech_stack": "VueJs, ExpressJs, NodeNs, PostgreSQL, TensorFlow",
       "description": "Guía (//'ɡi.a/) is an innovative museum guide application designed to revolutionize the museum experience. By simply pointing a camera, it effortlessly recognizes artworks and provides detailed descriptions, enriching visitors' engagement with the exhibits. Developed with a focus on user convenience, Guía is accessible through web browsers, following a mobile-first design approach.",
@@ -10,6 +11,7 @@
     },
     {
       "title":"ADM Programming Language",
+      "image":"",
       "link":"https://github.com/jtlagumbay/adunami_language",
       "subtitle":"Bisaya Programming Language",
       "tech_stack": "C++, MIPS Assembly",
