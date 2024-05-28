@@ -1,6 +1,7 @@
 
 .about-container{
-  height: 100dvh;
+  height: fit-content;
+  min-height: 100dvh;
   padding-bottom: 2rem;
   padding-top: 2rem;
 }
