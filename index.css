@@ -1,0 +1,114 @@
+:root {
+  --dark-primary: #073869;
+  --light-primary: #BBDEFB;
+  --primary: #2196F3;
+  --white: #FFFFFF;
+  --accent: #03A9F4;
+  --primary-text:#212121;
+  --secondary-text: #757575;
+  --divider: #BDBDBD;
+
+  --dm-serif-display: "DM Serif Display", serif;
+  --dm-sans: "DM Sans", sans-serif;
+
+  --min-padding: 10px;
+  --max-padding: 50px;
+
+  --box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+h1 {
+  font-family: var(--dm-serif-display);
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  color: var(--primary-text);
+  size: 3rem;
+  margin-bottom: 0px;
+}
+
+p {
+  font-family: var(--dm-sans);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--primary-text);
+  size: 1rem;
+}
+
+body{
+  /* background-color: var(--light-primary); */
+background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  padding: var(--min-padding);
+}
+
+.vertical-spacer {
+  height: 8px;
+}
+
+.horizontal-spacer-8 {
+  width: 8px;
+}
+.horizontal-spacer-24 {
+  width: 24px;
+}
+
+button {
+  font-family: var(--dm-serif-display);
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--primary-text);
+  size: 1.2rem;
+  padding: 0.5rem 2rem;
+  border: 2px solid var(--dark-primary);
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);  
+}
+
+button:focus{
+  background-color: var(--dark-primary);
+  color: var(--white);
+}
+
+/* Less than 600 */
+@media screen and (max-width: 600px) {
+  .flex-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .horizontal-spacer-8 {
+    height: 8px;
+  }
+  .horizontal-spacer-24 {
+    height: 24px;
+  }
+}
+
+/* Greater than 600 */
+@media screen and (min-width: 600px) {
+  .container {
+    padding: calc(var(--min-padding) + ((var(--max-padding) - var(--min-padding)) * ((100vw - 600px) / (1000 - 600))));
+  }
+  
+}
+
+/* Greater than 1000 */
+@media screen and (min-width: 1000px) {
+  .container {
+    padding: var(--max-padding);
+  }
+}
