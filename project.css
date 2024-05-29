@@ -9,13 +9,23 @@
   }
 
 .project-thumbnail {
-  height: 80dvh;
-  width: 50dvh;
-  max-width: 100%;
+  height: auto;
+  width: 50vw;
+  flex-grow: 1;
+  /* min-width: 50vw; */
+  /* max-width: 90%; */
   object-fit: cover;
   border-radius: 20px;
   box-shadow: var(--box-shadow);
   border: 2px solid var(--dark-primary);
+}
+
+.project-desc{
+  flex-grow: 1;
+}
+.project-thumbnail, .project-desc{
+  min-width: 0; 
+  min-height: 0;
 }
 
 .project-card-container{

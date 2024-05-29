@@ -108,7 +108,7 @@ button {
   color: var(--primary-text);
   background-color: var(--white);
   font-size: 1rem;
-  padding: 0.5rem 2rem;
+  padding: 1dvh 3dvh;
   border: 2px solid var(--dark-primary);
   border-radius: 20px;
   box-shadow: var(--box-shadow);  
@@ -120,7 +120,7 @@ button:focus{
 }
 
 /* Less than 600 */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .flex-row {
     display: flex;
     flex-direction: column;
